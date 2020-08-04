@@ -1,0 +1,11 @@
+UserAgent: *
+DisAllow /admin/
+DisAllow /assets/
+DisAllow /cache/
+DisAllow /data/
+DisAllow /helpers/
+DisAllow /images/
+DisAllow /incfiles/
+DisAllow /user/
+DisAllow /?lang=id
+DisAllow /?lang=en

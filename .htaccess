@@ -1,0 +1,39 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^admin/advertisement admin/ads.php [QSA,L]
+RewriteRule ^admin/email admin/email.php [QSA,L]
+RewriteRule ^admin/manage-administrator admin/administrator.php [QSA,L]
+
+RewriteRule ^admin/manage-ads admin/user_ads.php [QSA,L]
+RewriteRule ^admin/manage-files admin/files.php [QSA,L]
+RewriteRule ^admin/manage-messages admin/messages.php [QSA,L]
+RewriteRule ^admin/manage-notifications admin/notifications.php [QSA,L]
+RewriteRule ^admin/manage-users admin/users.php [QSA,L]
+RewriteRule ^admin/settings admin/settings.php [QSA,L]
+RewriteRule ^admin/upgrade-users admin/upgrade_user.php [QSA,L]
+
+RewriteRule ^user/ads-premium user/ads_premium.php [QSA,L]
+RewriteRule ^user/delete user/delete.php [QSA,L]
+RewriteRule ^user/folder user/folder.php? [QSA,L]
+RewriteRule ^user/import user/import.php [QSA,L]
+RewriteRule ^user/my-ads user/my_ads.php [QSA,L]
+RewriteRule ^user/my-files user/my_files.php [QSA,L]
+RewriteRule ^user/notifications user/notifications.php [QSA,L]
+RewriteRule ^user/premium user/premium.php [QSA,L]
+RewriteRule ^user/settings user/settings.php [QSA,L]
+RewriteRule ^user/upload user/upload.php [QSA,L]
+
+RewriteRule ^contact contact.php [QSA,L]
+RewriteRule ^([a-zA-Z0-9-_]+).html$ file.php?token=$1 [QSA,L]
+RewriteRule ^load/([0-9]+)/([0-9]+)/(.*)/(.*)$ download.php?id=$1&reff=$2&sid=$3 [QSA,L]
+RewriteRule ^login login.php [QSA,L]
+RewriteRule ^logout logout.php [QSA,L]
+RewriteRule ^register register.php [QSA,L]
+RewriteRule ^search search.php [QSA,L]
+RewriteRule ^terms_of_service tos.php [QSA,L]
+
+</IfModule>
+
+ErrorDocument 404 /404.php

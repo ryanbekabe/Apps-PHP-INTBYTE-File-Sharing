@@ -1,0 +1,25 @@
+===== How to Install Script =====
+
+Please Follow the Script Installation Steps Properly and Correctly To Run Smoothly.
+
+Database Configuration:
+   1. Open the / incfiles / folder.
+   2. Edit the database configuration which includes:
+     2.1. MySQL Host Name.
+     2.2. MySQL Username.
+     2.3. MySQL Password.
+     2.4. MySQL Database Name.
+   3. Save.
+
+Import SQL File:
+   1. Create a database name in PhpMyAdmin.
+   2. Import the /install/intbyte.sql file that is available.
+   3. Wait a few moments until the import process is complete.
+   4. Done.
+
+Administrator Data:
+   + Email => admin@intbyte.net
+   + Password => admin123
+
+Note:
+   + You can change the Administrator's data after the installation process is complete in the edit menu section available.
